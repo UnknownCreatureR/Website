@@ -1,0 +1,123 @@
+*
+    box-sizing: border-box
+    font-family: 'Courier New', Courier, monospace
+a 
+    display: block
+
+p, a, blockquote
+    color: black
+    text-decoration: none
+    font-size: 32px
+    line-height: 40px
+
+blockquote
+    
+    font-weight: bold
+    margin: 2em 
+
+.container
+    margin: auto 250px
+
+h1
+    font-size: 64px
+    font-weight: bolder
+    padding: 1em
+
+.content
+    background: #F5F5F5
+    margin: 0 300px
+
+    &_about-school > p
+        margin-bottom: 50px
+    
+    &_about-school > div
+        display: flex
+        align-items: center
+
+    &_about-school_second-block
+        margin: 50px 0
+
+    &_about-school_blue-background
+        z-index: 0
+        position: absolute
+        margin: 580px
+        width: 50%
+        height: 294px
+        background: #E6EAFF
+
+    &_contacts_block-contacts
+        margin: 0px 20em
+        display: flex
+        flex-direction: column
+        padding: 50px 70px
+        width: 638px
+        height: 580px
+        background-image: url(/img/blockContacts.svg)
+
+    &_contacts_block-contacts > p
+        font-weight: bold
+        margin: 30px
+
+    &_news
+        margin-top: 20px
+        background-image: url(/img/newsBlock.svg)
+        width: 1252px
+        height: 1670px
+        padding: 1em 4em
+
+    &_news_block_first_stroke, &_news_block_second-stroke
+        margin: 3em 0
+        display: flex
+
+.content_about-school > p ~ div p
+    z-index: 1
+    margin: 20px
+    padding-left: 20px
+
+header > img
+    position: relative
+    display: inline
+    width: 100%
+
+.header
+    width: 100%               
+    background: linear-gradient( #ADD3FF, #ffffff)
+    padding: 15px 0         
+    text-align: center
+
+.nav
+    display: flex
+    justify-content: space-evenly
+    &_navbar
+        display: flex
+        align-items: center
+        justify-content: space-between
+    
+    &_navbar > div
+        margin: 0 50px
+
+.logo
+    width: 145px
+    height: 142px
+
+.school-img
+    background-image: url(/img/school.png) 
+    background-size: auto
+    width: 1355px
+    height: 650px
+
+.school-img > p
+    font-weight: bold
+    color: white
+    position: absolute
+    margin: 200px 100px
+
+.footer
+    width: 100%               
+    background: linear-gradient( #ffffff, #ADD3FF)
+    padding: 5em 0         
+    text-align: center
+
+.social-icons > img
+    margin: 10px
+    padding: 10px
